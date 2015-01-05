@@ -1,17 +1,23 @@
 
-## REPLTRAAN
+## REPLtraan
+Generic node.js REPL with included client which allows node instances to be connected to and modified \ inspected while they are running.
 
-Generic node.js repl with included client
 Named after Teletraan, the semi-sentient computer that runs the Autobots' spaceship in the transformers universe.
 
-Instances can be connected to through a REPL interface.
+
+### Installation
+    sudo npm install -g repltraan
 
 ### Usage
 
-Just add require('repltraan').start(), and any node.js will be connectable.
+Add the following line to any node.js script.
 
-To connect to the repl, a REPL client is provided in ./bin/repl-client.js
+    require('repltraan').start()
 
-When running the REPL client, a socket connection to the running instance must be provided, typically they can be found in the /tmp directory of that server with the following naming node-repl-sock-{pid of node process}
+Then run:
 
-eg ./bin/repltraan.js /tmp/node-repl-sock-10973
+    repltraan /tmp/node-repl-sock-{PID of node instance}
+
+eg:
+
+    repltraan /tmp/node-repl-sock-10973
