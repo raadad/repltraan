@@ -1,0 +1,26 @@
+{
+    "name": "repltraan",
+    "description": "A generic REPL with client",
+    "version": "0.0.1",
+    "author": {
+        "name": "Raadad Elsleiman",
+        "email": "raadad@gmail.com"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/raadad/repltraan"
+    },
+    "main": "lib",
+    "bin": {
+        "repltraan": "./bin/repltraan.js"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "mocha": "~1.21.4",
+        "sinon": "^1.10.3",
+        "chai": "~1.9.2"
+    },
+    "test": "mocha test"
+
+}
