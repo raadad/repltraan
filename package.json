@@ -1,7 +1,7 @@
 {
     "name": "repltraan",
     "description": "A generic REPL with client",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": {
         "name": "Raadad Elsleiman",
         "email": "raadad@gmail.com"
