@@ -21,3 +21,9 @@ Then run:
 eg:
 
     repltraan /tmp/node-repl-sock-10973
+
+## Running Tests
+
+    npm install
+
+    mocha test
