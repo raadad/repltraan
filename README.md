@@ -6,7 +6,13 @@ Named after Teletraan, the semi-sentient computer that runs the Autobots' spaces
 
 
 ### Installation
+Global
+
     sudo npm install -g repltraan
+
+Local
+
+    npm install repltraan
 
 ### Usage
 
@@ -16,8 +22,20 @@ Add the following line to any node.js script.
 
 Then run:
 
+Global
+
     repltraan /tmp/node-repl-sock-{PID of node instance}
+
+Local
+
+    ./node_modules/repltraan/bin/repltraan.js
 
 eg:
 
     repltraan /tmp/node-repl-sock-10973
+
+## Running Tests
+
+    npm install
+
+    mocha test
